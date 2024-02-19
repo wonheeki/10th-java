@@ -13,7 +13,15 @@ public class VehicleEx {
         for(Vehicle v:vehicle){
             System.out.println(v.getName()+"의 최고 속력은 "+v.getMaxSpeed());
             v.move();
+
+            // instanceof란?
+            //  System.out.println(v instanceof Flyable);
+            // Flyable 구현한 경우 fly() 메서드 호출
+            if(v instanceof Flyable){
+                ((Flyable) v).fly(); // 명시적 형변환
+                
+            }
+            System.out.println();
         }
-        airplane.fly();
     }
 }

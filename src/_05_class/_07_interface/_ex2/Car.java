@@ -5,6 +5,7 @@ public class Car extends Vehicle{
         super(name, maxSpeed);
     }
 
+    // move 메서드 오버라이드
     @Override
     public void move() {
         System.out.println("도로를 따라 이동 중");

@@ -13,11 +13,11 @@ public class CdPlayer implements Music{
 
     @Override
     public void play() {
-        System.out.println("Cd 플레이어에서 "+song+"음악을 재생합니다.");
+        System.out.println("Cd 플레이어에서 '"+song+"'음악을 재생합니다.");
     }
 
     @Override
     public void stop() {
-        System.out.println("Cd 플레이어에서 "+song+"음악을 정지합니다.");
+        System.out.println("Cd 플레이어에서 '"+song+"'음악을 정지합니다.");
     }
 }
