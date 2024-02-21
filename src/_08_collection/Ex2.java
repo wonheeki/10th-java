@@ -25,12 +25,16 @@ public class Ex2 {
         // 키와 값을 쌍으로 구성된 모든 Map.Entry 객체를 Set에 담아 리턴
         Set<Map.Entry<String,Integer>> entrySet =  map.entrySet();
         System.out.println("== 입력 받은 이름과 나이 목록 ==");
-        Iterator<Map.Entry<String,Integer>> entryIterator= entrySet.iterator();
-        while(entryIterator.hasNext()){
-            Map.Entry<String,Integer> entry = entryIterator.next();
-            String k = entry.getKey();
-            Integer v = entry.getValue();
-            System.out.printf("이름 : %s, 나이 : %d\n", k,v);
+//        Iterator<Map.Entry<String,Integer>> entryIterator= entrySet.iterator();
+//        while(entryIterator.hasNext()){
+//            Map.Entry<String,Integer> entry = entryIterator.next();
+//            String k = entry.getKey();
+//            Integer v = entry.getValue();
+//            System.out.printf("이름 : %s, 나이 : %d\n", k,v);
+//        }
+
+        for(Map.Entry<String,Integer> entry : map.entrySet()){
+            System.out.printf("이름 : %s, 나이 : %d\n", entry.getKey(),entry.getValue());
         }
 
 
